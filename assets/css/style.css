@@ -64,7 +64,7 @@ ul li a,a{
 }
 
 .btn_1 {
-	padding: 14px 24px;
+	padding: 14px 20px;
 	background: #59EBFD;
 	color: var(--Black-900, #171B26) !important;
 	text-align: center;
@@ -76,10 +76,13 @@ ul li a,a{
 	border: none;
 	transition: 0.3s;
 	display: inline-block;
+	border: 1px solid transparent;
 }
 
 .btn_1:hover {
-	color: var(--Black-900, #171B26) !important;
+	border: 1px solid #59EBFD;
+	background: transparent;
+	color: var(--Black-900, #59EBFD) !important;
 	opacity: 0.83;
 }
 
@@ -113,7 +116,7 @@ ul li a,a{
 .btn_2 {
 	border: 2px solid var(--Purpel, #59EBFD);
 	/* box-shadow: 0px 6px 18px 0px rgba(222, 183, 78, 0.32); */
-	padding: 16px 20px;
+	padding: 16px 30px;
 	color: var(--Purpel, #59EBFD);
 	text-align: center;
 	font-family: Quicksand;
@@ -126,7 +129,8 @@ ul li a,a{
 
 .btn_2:hover {
 	opacity: 0.83;
-	color: var(--Purpel, #59EBFD);
+	background: #59EBFD;
+	color: #000; 
 }
 
 .prabox_mobile_image,
@@ -157,7 +161,7 @@ ul li a,a{
 	max-width: 872px;
 	position: absolute;
 	top: -48px;
-	right: 0;
+	right: -32px;
 }
 
 .banner_shape img {
@@ -239,6 +243,12 @@ ul li a,a{
 
 .single_team {
 	position: relative;
+	transition: 0.3s;
+}
+
+.single_team:hover {
+	cursor: pointer;
+	opacity: 0.83;
 }
 
 .single_team img {
@@ -367,6 +377,7 @@ input:focus-visible {
 	font-style: normal;
 	font-weight: 500;
 	line-height: 20px;
+	opacity: 0.6; 
 }
 
 .footer ul li a {
@@ -377,6 +388,16 @@ input:focus-visible {
 	font-style: normal;
 	font-weight: 500;
 	line-height: 20px;
+	opacity: 0.6; 
+	transition: 0.3s;
+}
+
+.footer ul li a:hover {
+	opacity: 1;
+}
+
+.input_btn button {
+	width: 163px;
 }
 
 .footer ul {
