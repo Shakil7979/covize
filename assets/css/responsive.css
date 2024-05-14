@@ -3,15 +3,164 @@
 }
 
 @media all and (max-width: 991px){
-	
+	.banner_text { 
+        text-align: center;
+    }
+    .banner_shape,
+    .banner_image {
+        display: none;
+    } 
+    .banner_mobile_img{
+        display: block;
+        margin-top: 34px;
+    }
+    .banner_mobile_img img{
+        width: 100%;
+    }
+    .prabox_shape_two,
+    .prabox_shape_one{
+        display: none;
+    }
+    .prabox_mobile_image{
+        display: block;
+    }
+    .prabox_mobile_image img{
+        width: 100%;
+    }
+    .pra_p p:last-child{
+        margin: 0;
+    }
+    .banner_area {
+        padding: 166px 0 0 0; 
+    }
 }
 
 @media all and (max-width: 767px){
-	
+	.prabox_area .container {
+        padding: 0;
+    }
+    .pra_p p { 
+        font-size: 18px; 
+        line-height: 110%;
+    }
+    .prabox_area {
+        padding: 20px 0; 
+    }
+    .single_items p { 
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400; 
+    }
+    .single_items {
+        margin-bottom: 15px;
+        height: auto;
+    }
+    .single_team { 
+        margin-bottom: 20px;
+    }
+    .footer { 
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 25px;
+    }
+    .footer ul { 
+        gap: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .section_title {
+        margin-bottom: 25px;
+    }
+    .footer p,
+    .footer ul li a { 
+        font-size: 14px; 
+    }
 }
 
+@media all and (min-width: 575px){
+    .menu {
+        display: block !important;
+    }
+}
 @media all and (max-width: 575px){
-	
+	.menu ul {
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        width: 100%;
+        background: #000;
+        left: 0;
+        text-align: center;
+        padding: 30px 0;
+        top: 73px;
+        z-index: 999999;
+    }
+    .btn_1 { 
+        font-size: 14px; 
+        padding: 8px 9px;
+    }
+    .logo a { 
+        font-size: 20px; 
+    }
+    .contact_btn {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+    .menu{ 
+        display: none;
+    }
+    .desktop_hide{
+        display: block;
+    }
+    .mobile_none{
+        display: none;
+    }
+    .mobile_bars a i {
+        color: #fff;
+        font-size: 24px;
+        width: 28px;
+    }
+    .btn_2 {
+        padding: 8px 10px; 
+        font-size: 14px; 
+    }
+    .input_btn button {
+        width: 102px;
+    }
+    .banner_text h2 { 
+        font-size: 30px; 
+    }
+    .banner_text p { 
+        font-size: 16px; 
+    }
+    .section_padding {
+        padding: 30px 0;
+    }
+    .section_title h2 { 
+        font-size: 28px; 
+    }
+    .single_team_info h4{
+        font-size: 26px;
+    }
+    .single_team_info p{
+        font-size: 18px;
+    }
+    .section_title p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .input_group textarea, .input_group input { 
+        font-size: 14px; 
+    }
+    .banner_text p { 
+        margin: 15px 0 30px 0;
+        line-height: 26px;
+    }
+    .banner_area {
+        padding: 136px 0 0 0; 
+    }
+
 }
 
 @media all and (max-width: 450px){
