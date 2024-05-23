@@ -11,8 +11,22 @@ $(document).ready(function(){
 			$(this).html('<i class="fas fa-bars"></i>');
 			count = 0;
 		}
-	})
+	});
 
+	$(".menu ul li a, .contact_btn a, .banner_text a").click(function () {
+		$("html,body").animate(
+		  {
+			scrollTop: $($(this).attr("href")).offset().top,
+		  },
+		  1000
+		);
+		return false;
+	  });
+
+	
+	$(document).on('click','.input_btn button', function(){
+		return false;
+	})
 
 
 
